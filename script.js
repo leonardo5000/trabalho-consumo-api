@@ -77,7 +77,6 @@ async function fetchCharacters() {
         </div>
       `;
     });
-
     content.appendChild(characterList);
     renderPagination();
 
@@ -85,8 +84,6 @@ async function fetchCharacters() {
     content.innerHTML = `<p>Erro ao carregar personagens: ${error.message}</p>`;
   }
 }
-
-// Função para redirecionar ao clicar no nome
 function viewCharacter(id) {
   window.location.href = `detail.html#${id}`;
 }
